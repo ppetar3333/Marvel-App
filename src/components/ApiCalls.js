@@ -28,7 +28,7 @@ function ApiCalls({ query }) {
     
     return(
         <div>
-            { characters.length == 0 && <NoResault /> || <CharacterCard items={characters} isLoading={isLoading}/>}
+            { (characters.length > 0 && <CharacterCard items={characters} isLoading={isLoading}/>) || <NoResault/>}
         </div>
     )
 }

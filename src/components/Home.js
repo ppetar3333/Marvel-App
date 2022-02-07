@@ -12,7 +12,7 @@ function Home() {
         <section className="home">
             <div className="home__wrapper container">
                 <Search search={(q) => setQuery(q)}/>
-                { query.length > 0 && <ApiCalls query={query} /> || <NoResult /> } 
+                { (query.length > 0 && <ApiCalls query={query} />) || <NoResult /> } 
             </div>
         </section>
     )
