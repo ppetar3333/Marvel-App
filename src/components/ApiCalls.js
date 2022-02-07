@@ -1,10 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect} from "react";
-
-// ova komponenta ce da ima svu komunikaciju sa API-om
-// a iz api managera cu da stupim u kontakt sa ovom komponentom
-// ubaciti skeletone kada nema podataka, tipa za loading da bude if(!data.length){ return <Loader /> } 
+import CharacterCard from "./CharacterCard";
 
 function ApiCalls() {
 
@@ -28,7 +25,7 @@ function ApiCalls() {
     
     return(
         <div>
-            <h1>ApiCalls</h1>
+            <CharacterCard items={characters} isLoading={isLoading}/>
         </div>
     )
 }

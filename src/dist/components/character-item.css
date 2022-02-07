@@ -1,0 +1,14 @@
+.character-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.character-item__name {
+  max-width: 150px;
+  color: white;
+  margin-top: 5px;
+}
+
+.character-item__img {
+  border-radius: 3px;
+}

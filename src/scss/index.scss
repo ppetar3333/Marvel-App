@@ -2,5 +2,7 @@
 @import './abstract/mixins';
 @import './utilities/container';
 @import './base/reset';
-// sections
-// components
+@import './components/character-card.scss';
+@import './components/character-item.scss';
+@import './components/search.scss';
+@import './components/loading.scss';

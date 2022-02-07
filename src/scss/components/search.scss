@@ -1,0 +1,19 @@
+.search__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  background: rgb(150, 150, 150);
+  border-radius: 3px;
+}
+
+.search__input::placeholder {
+  padding: 10px;
+}
+
+.search__input {
+  width: 60%;
+  height: 30px;
+  padding: 20px;
+  border-radius: 5px;
+}

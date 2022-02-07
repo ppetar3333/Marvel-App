@@ -1,0 +1,31 @@
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  content: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.loading__title {
+  color: white;
+  font-size: 30px;
+}
+
+.loading__cirle {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 35px;
+  height: 35px;
+  content: center;
+  margin-right: 30px;
+}
