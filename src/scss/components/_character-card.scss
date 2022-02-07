@@ -1,0 +1,13 @@
+.character-card__wrapper {
+  @include center-grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(2, 10fr);
+  }
+
+  @include breakpoint(mobile) {
+    grid-template-columns: repeat(1, 20fr);
+  }
+}

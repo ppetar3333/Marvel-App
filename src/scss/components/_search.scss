@@ -1,0 +1,25 @@
+.search__wrapper {
+  @include center-flex-box;
+
+  padding: $padding-tb-m;
+}
+
+.search__form {
+  @include center-flex-box;
+
+  width: 100%;
+  background: $red;
+  padding: $padding-tb-m;
+  border-radius: $border-radius-s;
+}
+
+.search__input::placeholder {
+  padding: $padding-all-s;
+}
+
+.search__input {
+  width: 60%;
+  height: 30px;
+  padding: 20px;
+  border-radius: $border-radius-s;
+}

@@ -2,8 +2,8 @@
 @import './abstract/mixins';
 @import './utilities/container';
 @import './base/reset';
-@import './components/character-card.scss';
-@import './components/character-item.scss';
-@import './components/search.scss';
-@import './components/loading.scss';
-@import './components/no-result.scss';
+@import './components/character-card';
+@import './components/character-item';
+@import './components/loading';
+@import './components/no-result';
+@import './components/search';

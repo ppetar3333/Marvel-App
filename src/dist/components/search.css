@@ -9,7 +9,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px 0;
-  border-radius: 3px;
 }
 
 .search__form {
@@ -23,8 +22,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #969696;
+  background: #750509;
   padding: 30px 0;
+  border-radius: 3px;
 }
 
 .search__input::-webkit-input-placeholder {

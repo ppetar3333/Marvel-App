@@ -1,0 +1,31 @@
+.character-item {
+  margin: $margin-all-m;
+  text-align: center;
+  border: 2px solid $red;
+  padding: $padding-all-m;
+
+  @include breakpoint(mobile) {
+    margin: 20px 0;
+    padding: 15px;
+  }
+}
+
+.character-item__name {
+  color: $white;
+  margin-top: 5px;
+  width: 150px;
+  height: 80px;
+}
+
+.character-item__img {
+  border-radius: $border-radius-s;
+}
+
+.character-item__bookmark {
+  background: $light-yellow;
+  width: 100px;
+  padding: $padding-all-s;
+  color: $darker-gray;
+  margin: 5px 0 0 -8px;
+  border-radius: $border-radius-s;
+}

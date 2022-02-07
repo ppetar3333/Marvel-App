@@ -1,12 +1,9 @@
 import React from "react";
-import { useState } from 'react';
 
 function CharacterItem({item}) {
 
-    const [character, setCharacter] = useState([]);
-
-    let setItem = (item) => {
-        localStorage.setItem('character', JSON.stringify(item));
+    const addItem = (selected) => {
+        console.log(selected);
     }
 
     return (
@@ -19,7 +16,7 @@ function CharacterItem({item}) {
                     <h3 className="character-item__name">{item.name}</h3>
                 </div>
                 <div className="character-item__bookmark-wrapper">
-                    <button onClick={() => setItem(item)} type="button" className="character-item__bookmark">Bookmark</button>
+                    <button onClick={() => addItem(item)} type="button" className="character-item__bookmark">Bookmark</button>
                 </div>
             </div>
         </div>
