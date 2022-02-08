@@ -2,11 +2,10 @@ import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import CharacterCard from "./CharacterCard";
-import NoResault from "./NoResult";
 
 function ApiCalls({ query }) {
   const publicKey = "6d7aab5601c8a0bbdd3257a767ebe99c";
-  const hash = "71ce173a5e21e2177af828d78fe87f23"; // generated with md5.cz
+  const hash = "71ce173a5e21e2177af828d78fe87f23";
 
   const [characters, setCharacters] = useState([]);
   const [isLoading, setLoading] = useState(true);
@@ -27,9 +26,7 @@ function ApiCalls({ query }) {
 
   return (
     <div>
-      {(characters.length > 0 && (
-        <CharacterCard items={characters} isLoading={isLoading} />
-      )) || <NoResault />}
+      <CharacterCard items={characters} isLoading={isLoading}/>
     </div>
   );
 }

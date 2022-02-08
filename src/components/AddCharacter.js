@@ -17,7 +17,7 @@ function AddToLocalStorage() {
   };
 
   localStorage.setItem("character", JSON.stringify(character));
-  
+
   return addItem;
 }
 
