@@ -26,7 +26,7 @@ function ApiCalls({ query }) {
 
   return (
     <div>
-      <CharacterCard items={characters} isLoading={isLoading}/>
+      <CharacterCard items={characters} isLoading={isLoading} />
     </div>
   );
 }

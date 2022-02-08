@@ -20,7 +20,11 @@ function BookmarkItems({ query }) {
   if (storage != null) {
     return (
       <div>
-        {storage && !!storage.length ? <CharacterCard items={storage} /> : <NoResault/>}
+        {storage && !!storage.length ? (
+          <CharacterCard items={storage} />
+        ) : (
+          <NoResault />
+        )}
       </div>
     );
   }

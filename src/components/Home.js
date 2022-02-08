@@ -11,7 +11,7 @@ function Home() {
     <section className="home">
       <div className="home__wrapper container">
         <Search search={(q) => setQuery(q)} />
-        {query ? <ApiCalls query={query} /> : <BookmarkItems query={query}/> }
+        {query ? <ApiCalls query={query} /> : <BookmarkItems query={query} />}
       </div>
     </section>
   );
