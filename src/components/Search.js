@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function Search({ search }) {
+const Search = ({ search }) => {
   const [text, setText] = useState("");
 
   const onSearch = (q) => {
@@ -17,7 +17,7 @@ function Search({ search }) {
             <input
               className="search__input"
               type="text"
-              placeholder="Enter Text"
+              placeholder="Search Character"
               autoFocus
               onChange={(e) => onSearch(e.target.value)}
               value={text}

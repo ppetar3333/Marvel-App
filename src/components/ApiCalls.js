@@ -25,8 +25,6 @@ function ApiCalls({ query }) {
     getCharacters(20);
   }, [query]);
 
-  console.log(characters);
-
   return (
     <div>
       {(characters.length > 0 && (

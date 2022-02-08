@@ -12,7 +12,7 @@ function CharacterCard({ items, isLoading }) {
     <section className="character-card">
       <div className="character-card__wrapper container">
         {items.map((item) => (
-          <div className="character-item">
+          <div key={item.id} className="character-item">
             <div className="character-item__info">
               <CharacterItem item={item} />
             </div>
