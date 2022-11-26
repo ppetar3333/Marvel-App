@@ -1,10 +1,24 @@
 import React from "react";
 import Loading from "./Loading";
 import CharacterItem from "./CharacterItem";
-import AddToLocalStorage from "./AddCharacter";
 
-function CharacterCard({ items, isLoading }) {
-  const addItem = AddToLocalStorage();
+function CharacterCard({ items, isLoading, bookmarked}) {
+  const addItem = (item) => {
+    let items = localStorage.getItem("character");
+
+    let storage = JSON.parse(items);
+
+    let newData = [];
+
+    if (storage) {
+      storage = storage.filter((data) => data.id !== item.id);
+      newData = [...storage, item];
+    } else {
+      newData.push(item);
+    }
+
+    localStorage.setItem("character", JSON.stringify(newData));
+  }
 
   return isLoading ? (
     <Loading />
