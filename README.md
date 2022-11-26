@@ -9,7 +9,4 @@ Click on link: [Marvel Website](https://ppetar3333.github.io/Marvel-App/)
 > npm install
 
 ### Run App
-#### First Terminal
-> gulp
-#### Second Terminal
 > npm start
