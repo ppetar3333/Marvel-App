@@ -1,7 +1,7 @@
 # Marvel-App
 
 ## Run project on web
-Click on link: [Marvel Website](https://ppetar3333.github.io/Marvel-App/)
+Click on link: <a href="https://ppetar3333.github.io/Marvel-App/" target="_blank">Marvel Website</a>
 
 ## Run project locally
 
