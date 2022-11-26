@@ -12,6 +12,7 @@
     "axios": "^0.25.0",
     "browser-sync": "^2.27.5",
     "cssnano": "^5.0.8",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-consolidate": "^0.2.0",
